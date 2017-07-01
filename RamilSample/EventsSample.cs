@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace RamilSample
 {
@@ -7,27 +8,47 @@ namespace RamilSample
     public class EventsSample
     {
         public event DelSample eventSample;
+        private bool stop = false;
+        private Thread thread1, thread2;
 
         public EventsSample()
         {
-            eventSample = Run;
-            eventSample += Run2;
+            thread1 = new Thread(Run);
+            thread2 = new Thread(Run2);
+        }
+
+        public void Stop()
+        {
+            Console.WriteLine("Потоки закрыты.");
+            stop = true;
         }
 
         public void Start()
         {
-            if (eventSample != null) 
-                eventSample();
+            thread1.Start();
+            thread2.Start();
         }
 
         private void Run()
         {
-            Console.Write("Run!");
+            while (true)
+            {
+                if (stop) 
+                    return;
+                Console.Write("Run!");
+                Thread.Sleep(1500);
+            }
         }
 
         private void Run2()
         {
-            Console.Write("Run2!");
+            while (true)
+            {
+                if (stop) 
+                    return;
+                Console.Write("Run2!");
+                Thread.Sleep(2000);
+            }
         }
     }
 }
