@@ -1,0 +1,6 @@
+c:\users\fail\documents\visual studio 2012\Projects\RamilSample\RamilSample\bin\Debug\RamilSample.exe.config
+c:\users\fail\documents\visual studio 2012\Projects\RamilSample\RamilSample\bin\Debug\RamilSample.exe
+c:\users\fail\documents\visual studio 2012\Projects\RamilSample\RamilSample\bin\Debug\RamilSample.pdb
+c:\users\fail\documents\visual studio 2012\Projects\RamilSample\RamilSample\obj\Debug\RamilSample.csprojResolveAssemblyReference.cache
+c:\users\fail\documents\visual studio 2012\Projects\RamilSample\RamilSample\obj\Debug\RamilSample.exe
+c:\users\fail\documents\visual studio 2012\Projects\RamilSample\RamilSample\obj\Debug\RamilSample.pdb
